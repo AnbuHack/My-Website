@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asm Priya Groups</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="animate-header">ASM Priya Groups</h1>
+        <p>Your One-Stop Solution for WATER AND BUILDING MATERIALS</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="assets/icons/water-transport.png" alt="Water Transport Icon">
+                    <h3>Water Transport</h3>
+                    <p>Lorries: 12,000L, 10,000L, 6,000L</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/wall.png" alt="Manufacturing Icon">
+                    <h3>Manufacturing</h3>
+                    <p>Red Brick, Hollow Block, Solid Block</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/agriculture.png" alt="Farming Icon">
+                    <h3>Farming Equipment</h3>
+                    <p>Tractor Rentals</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icons/truck.png" alt="Construction Icon">
+                    <h3>Construction Materials</h3>
+                    <p>Msand, Psand, Kirasar, Jalli</p>
+                </div>
+            </div>
+</section>
+       <section id="about" class="about-section">
+    <div class="about-content">
+        <img src="assets/images/about-us.jpg" alt="About Us Image">
+    </div>
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Asm Priya Groups is dedicated to providing high-quality services and products to our clients. With years of experience in the industry, we ensure customer satisfaction through our diverse range of offerings.</p>
+    </div>
+</section>
+  <section id="gallery" class="alt-bg">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="assets/images/lorry1.jpg" alt="Lorry 1" onclick="openModal('assets/images/lorry1.jpg')">
+                <img src="assets/images/lorry2.jfif" alt="Lorry 2" onclick="openModal('assets/images/lorry2.jfif')">
+                <img src="assets/images/bricks.jpg" alt="Bricks" onclick="openModal('assets/images/bricks.jpg')">
+		<img src="assets/images/jalli.avif" alt="jalli" onclick="openModal('assets/images/jalli.avif')">
+		<img src="assets/images/Tractor.jpg" alt="Tractor" onclick="openModal('assets/images/Tractor.jpg')">
+		
+            </div>
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-img" src="" alt="Enlarged View">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+      
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Great service, reliable and professional!"</p>
+                    <span>- ANBALAGAN</span>
+                </div>
+                <div class="testimonial">
+                    <p>"High-quality materials at the best price!"</p>
+                    <span>- SARAVANA</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Contact Info</h4>
+                <p>Phone: Your contact number</p>
+                <p>Email: Your email address</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#services">Services</a><br>
+                <a href="#about">About Us</a><br>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <p>© 2025 Asm Priya Groups. All rights reserved.</p>
+        <button onclick="scrollToTop()" id="back-to-top">↑ Back to Top</button>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
